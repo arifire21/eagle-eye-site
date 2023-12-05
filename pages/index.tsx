@@ -1,17 +1,27 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import Navbar from '../components/navbar';
+import styles from '../styles/Home.module.scss';
+import CTAButton from '../components/button';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Eagle Eye Monitoring, LLC.</title>
+        <title>Eagle Eye Monitoring, LLC. - Parking Enforcement and Monitoring Services</title>
         <link rel="icon" href="/favicon.ico" />
         <meta></meta>
       </Head>
 
-    <p>F YOU WANT HAPPY TENANTS / CUSTOMERS TOMORROW. YOU’LL HIRE US TODAY!</p>
+      {/* <Navbar/> */}
+      <h1 className="">
+      Hello world!
+    </h1>
+
+    <CTAButton variant='primary' text='test'/>
+    <CTAButton variant='secondary' text='other test'/>
+
+    <p>If you want happy tenants and customers tomorrow, you’ll hire us today!</p>
 
     <div className={styles.container}>
     <Image src={'../public/vercel.svg'} alt='logo' className={styles.item} width={400} height={400}/>

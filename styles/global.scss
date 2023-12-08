@@ -19,6 +19,28 @@ body {
     sans-serif;
 }
 
+footer {
+  background-color: variables.$primary_blue;
+  width: 100vw;
+  height: fit-content;
+  padding: 1rem 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+//NAVBAR STYLING
+.container {
+  height: 78px;
+  width: 100vw;
+  background-color: variables.$primary_blue;
+  display: flex;
+}
+
+// .navButton {
+//     padding: ;
+// }
+
 a {
   color: inherit;
   text-decoration: none;

@@ -1,0 +1,12 @@
+@use 'variables';
+
+.container {
+    height: 78px;
+    width: 100vw;
+    background-color: variables.$primary_blue;
+    display: flex;
+}
+
+// .navButton {
+//     padding: ;
+// }

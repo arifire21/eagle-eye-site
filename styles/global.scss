@@ -1,9 +1,4 @@
-$primary_blue: #477E80;
-$primary_blue_hover: #3c6f71;
-$primary_blue_click: #335e5f;
-$secondary_blue: #82A2A2;
-$tertiary_blue: #E4ECEC;
-$other_blue: #4C628C;
+@use 'variables';
 
 html,
 body {
@@ -38,26 +33,27 @@ img {
   height: auto;
 }
 
+//CTA Buttons
 .button {
-  border: 2px solid $primary_blue;
+  border: 2px solid variables.$primary_blue;
   border-radius: 10px;
   padding: 8px 16px;
   max-width: fit-content;
   &:hover, &a:active {
     cursor: pointer;
-    border-color: $primary_blue_hover;
+    border-color: variables.$primary_blue_hover;
   }
 }
 
 .primary {
-  background-color: $primary_blue;
+  background-color: variables.$primary_blue;
   color: #fff;
   &:hover {
-    background-color: $primary_blue_hover;
+    background-color: variables.$primary_blue_hover;
     color: #cccccc
   }
   &:active {
-    background-color: $primary_blue_click;
+    background-color: variables.$primary_blue_click;
   }
 }
 
@@ -65,6 +61,9 @@ img {
     background-color: #fff;
     color: #000;
     &:hover {
-      background-color: #cccccc;
+      background-color: variables.$secondary_hover;
+    }
+    &:active {
+      background-color: variables.$secondary_click;
     }
 }

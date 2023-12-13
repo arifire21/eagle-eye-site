@@ -41,7 +41,7 @@ export default function Navbar() {
   return (
     <nav className='nav-container'>
       <Link href="/" title='Home'>
-        <Image src={LogoSmall} height={100} width={100} alt='eagle-eye-home' style={{paddingLeft:'1rem'}}/>
+        <Image className='nav-logo' src={LogoSmall} height={55} width={110} alt='eagle-eye-home'/>
       </Link>
       <Dropdown>
         <MenuButton className='dropdown-main primary'>Services &#9660;</MenuButton>

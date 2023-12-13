@@ -29,12 +29,13 @@ footer {
   flex-direction: column;
   text-align: center;
   & > p {
-    margin: 0.25rem 0;
+    margin: 0;
   }
 }
 
 h2 {
   color: variables.$primary_blue;
+  text-align: center;
 }
 
 //NAVBAR STYLING
@@ -46,6 +47,15 @@ h2 {
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: sticky;
+  top: 0px;
+}
+
+.nav-logo {
+  padding-left: 1rem;
+}
+
+.nav-logo:hover {
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
 
 .nav-item {
@@ -102,24 +112,28 @@ a {
   box-sizing: border-box;
 }
 
-img {
-  // max-width: 100%;
-  // height: auto;
+.portfolio-img {
   border-radius: 25px;
 }
 
-li {
+//for any list
+li::marker {
   color: variables.$secondary_blue;
+}
+
+li {
+  color: #000;
 }
 
 //CTA Buttons
 .button {
+  margin: 0 auto;
   border: 2px solid variables.$primary_blue;
   border-radius: 10px;
   padding: 8px 16px;
   max-width: fit-content;
   transition: all .1s ease-in;
-  &:hover, &a:active {
+  &:hover, &:active {
     cursor: pointer;
     border-color: variables.$primary_blue_hover;
   }
@@ -150,7 +164,7 @@ li {
 
 //to keep consistent per page
 .main-padding {
-  padding: 0.25rem 6.25rem;
+  padding: 1.5rem 6.25rem;
 }
 
 .mainContainer {
@@ -161,9 +175,10 @@ li {
 }
 
 .sbsContainer {
+  width: 100%; //100% of mainContainer
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 

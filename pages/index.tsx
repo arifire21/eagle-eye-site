@@ -19,7 +19,7 @@ export default function Home() {
     <div className='main-padding'>
         <div className='mainContainer'>
           <Image src={Logo} alt='Eagle Eye LLC.'/>
-          <h1>Parking Enforcement and Monitoring Services</h1>
+          <h1 className={styles.sub}>Parking Enforcement and Monitoring Services</h1>
           <p className={styles.tagline}>If you want happy tenants and customers tomorrow, you’ll hire us today!</p>
 
           <div className='sbsContainer'>
@@ -71,11 +71,13 @@ export default function Home() {
             </div>
 
             <div className='sbsText '>
-              <p>We know each property has different needs and requirements. Schedule a meeting with our manager--we will be happy to survey your property and discuss available options!</p>
+              <p style={{textAlign:'center'}}>We know each property has different needs and requirements. Schedule a meeting with our manager--we will be happy to survey your property and discuss available options!</p>
               <div className='sbsContainer '>
                 <CTAButton variant='primary' text='Contact us'/>
               </div>
             </div>
+
+            <p>We look forward to working with you and being the solution for your parking problems!</p>
         </div>
       </div>
     </>

@@ -5,7 +5,7 @@ import CTAButton from '@/components/button';
 
 import Logo  from '@/public/logo_transparent_crop.png';
 import Site1 from '../images/site1.png';
-import Site2 from '../images/site1.png';
+import Site2 from '../images/site2.png';
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta></meta>
       </Head>
+
     <div className='main-padding'>
         <div className='mainContainer'>
           <Image src={Logo} alt='Eagle Eye LLC.'/>
@@ -29,8 +30,8 @@ export default function Home() {
                 Property managers and owners are able to access our programs at any time, and opt-in to mobile alerts, to stay informed about their properties’ security.</p>
   
                 <div className='sbsContainer '>
-                <CTAButton variant='primary' text='Learn more'/>
-              </div>
+                  <CTAButton variant='primary' text='Learn more'/>
+                </div>
 
               <p>Our goal is to ensure that your property is maintained in compliance with all local and state parking ordinances, as well as your parking rules.
                 We take the hassle of finding all the vehicles in violation out of your hands. We work hand and hand with various local tow truck companies.
@@ -50,15 +51,15 @@ export default function Home() {
                 <h2>We Assist With:</h2>
                 <ul>
                   <li>customizable 24 hour patrol for your property</li>
-                  <li>Handicap parking space and Accessible Violations</li>
-                  <li>Fire Lanes Violations</li>
-                  <li>No Parking Zones</li>
-                  <li>Tenant Parking Only</li>
-                  <li>Dumpster/ Entrance Blocked</li>
-                  <li>Taking Multiple Parking Spaces</li>
-                  <li>No Permit Parking/Reserved Space violations</li>
-                  <li>Parking on Landscaping or grass</li>
-                  <li>Repainting parking lines</li>
+                  <li>handicap parking space and accessible violations</li>
+                  <li>fire lanes violations</li>
+                  <li>no parking zones</li>
+                  <li>tenant parking only</li>
+                  <li>dumpster/ entrance blocked</li>
+                  <li>taking multiple parking spaces</li>
+                  <li>no permit parking/reserved space violations</li>
+                  <li>parking on landscaping or grass</li>
+                  <li>repainting parking lines</li>
                   and more!
                 </ul>
 

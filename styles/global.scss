@@ -33,6 +33,10 @@ footer {
   }
 }
 
+h1 {
+  text-align: center;
+}
+
 h2 {
   color: variables.$primary_blue;
   text-align: center;
@@ -116,6 +120,10 @@ a {
   border-radius: 25px;
 }
 
+ul {
+  margin-top: 0 !important;
+}
+
 //for any list
 li::marker {
   color: variables.$secondary_blue;
@@ -155,10 +163,10 @@ li {
     background-color: #fff;
     color: #000;
     &:hover {
-      background-color: variables.$primary_blue_hover;
+      background-color: #cccccc;
     }
     &:active {
-      background-color: variables.$primary_blue_click;
+      background-color: #b9b9b9;
     }
 }
 

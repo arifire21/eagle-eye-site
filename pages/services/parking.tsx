@@ -45,7 +45,7 @@ export default function Home() {
 
                 <h2>Examples of Violations We Monitor:</h2>
                 <div className='sbsContainer'>
-                    <Image src={Site2} alt='parking-lot-text' className='portfolio-img' width={395} height={225} />
+                    <Image src={Site2} alt='parking-lot-text' className='portfolio-img' placeholder="blur"/>
 
                         <section className='sbsText'>
                             <ul>
@@ -65,7 +65,7 @@ export default function Home() {
                             </ul>
                         </section>
 
-                        <Image src={Site2} alt='parking-lot-text' className='portfolio-img' width={395} height={225} />
+                        <Image src={Site2} alt='parking-lot-text' className='portfolio-img' placeholder="blur"/>
                 </div>
 
                 <div>

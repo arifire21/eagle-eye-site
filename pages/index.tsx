@@ -37,7 +37,7 @@ export default function Home() {
                 We take the hassle of finding all the vehicles in violation out of your hands. We work hand and hand with various local tow truck companies.
                 Eagle Eye will be there as your representative any time day or night.</p>
             </section>
-            <Image src={Site1} alt='parking-lot' className='portfolio-img' width={470} height={355}/>
+            <Image src={Site1} alt='parking-lot' className='portfolio-img' width={470} height={355} placeholder='blur'/>
           </div>
 
           <section>
@@ -46,7 +46,7 @@ export default function Home() {
           </section>
 
           <div className='sbsContainer'>
-              <Image src={Site2} alt='parking-lot-text' className='portfolio-img' width={395} height={225}/>
+              <Image src={Site2} alt='parking-lot-text' className='portfolio-img' width={400} height={250}/>
               <section className='sbsText'>
                 <h2>We Assist With:</h2>
                 <ul>

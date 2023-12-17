@@ -14,38 +14,36 @@ export default function Painting() {
             <meta></meta>
         </Head>
 
-        <div className='main-padding'>
-            <div className='mainContainer'>
-                <h1>Painting Services</h1>
+        <div className='mainContainer'>
+            <h1>Painting Services</h1>
 
-                <div className="sbsContainer">
-                    <section className='sbsText'>
-                        <p>Visible traffic control markings provide a smooth parking experience for both visitors and property managers.
-                            That’s why we offer painting services--so your property can look its best.
-                            We know the guidelines for proper handicap space dimensions, as well as curb allowances, etc. (more items)</p>
-                    </section>
+            <div className="sbsContainer">
+                <section className='sbsText'>
+                    <p>Visible traffic control markings provide a smooth parking experience for both visitors and property managers.
+                        That’s why we offer painting services--so your property can look its best.
+                        We know the guidelines for proper handicap space dimensions, as well as curb allowances, etc. (more items)</p>
+                </section>
 
-                    <section className="sbsText">
-                    <h2>We Offer:</h2>
-                    <ul>
-                        <li>repainting parking lines</li>
-                        <li>repainting handicap spaces and access isles</li>
-                        <li>repainting fire zones</li>
-                        <li>painting traffic control markings (arrows or stop lines)</li>
-                    </ul>
+                <section className="sbsText">
+                <h2>We Offer:</h2>
+                <ul>
+                    <li>repainting parking lines</li>
+                    <li>repainting handicap spaces and access isles</li>
+                    <li>repainting fire zones</li>
+                    <li>painting traffic control markings (arrows or stop lines)</li>
+                </ul>
 
-                    <div>
-                        <p>We offer services priced as needed.</p>
-                        <div className='sbsContainer '>
-                            <CTAButton variant="primary" text="Get a quote"/>
-                        </div>
+                <div>
+                    <p>We offer services priced as needed.</p>
+                    <div className='sbsContainer '>
+                        <CTAButton variant="primary" text="Get a quote"/>
                     </div>
-                    </section>
                 </div>
-
-                <h2>Examples of Our Work:</h2>
-                <p>TBD!</p>
+                </section>
             </div>
+
+            <h2>Examples of Our Work:</h2>
+            <p>TBD!</p>
         </div>
         </>
     )

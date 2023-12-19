@@ -29,7 +29,7 @@ export default function Home() {
               Property managers and owners are able to access our programs at any time, and opt-in to mobile alerts, to stay informed about their properties’ security.</p>
 
             <div className='sbsContainer '>
-              <CTAButton variant='primary' text='Learn more' />
+              <CTAButton variant='primary' text='Learn more' link='/services/parking' />
             </div>
 
             <p>Our goal is to ensure that your property is maintained in compliance with all local and state parking ordinances, as well as your parking rules.
@@ -68,8 +68,8 @@ export default function Home() {
             </ul>
 
             <div className='sbsContainer '>
-              <CTAButton variant='primary' text='Monitoring services' />
-              <CTAButton variant='secondary' text='Painting services' />
+              <CTAButton variant='primary' text='Monitoring services' link='/services/parking' />
+              <CTAButton variant='secondary' text='Painting services' link='/services/painting' />
             </div>
           </section>
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
         <div className='sbsText '>
           <p style={{ textAlign: 'center' }}>We know each property has different needs and requirements. Schedule a meeting with our manager--we will be happy to survey your property and discuss available options!</p>
           <div className='sbsContainer '>
-            <CTAButton variant='primary' text='Contact us' />
+            <CTAButton variant='primary' text='Contact us' link='/contact' />
           </div>
         </div>
 

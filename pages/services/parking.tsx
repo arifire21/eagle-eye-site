@@ -74,7 +74,7 @@ export default function Home() {
             <div>
                 <p>We offer services priced as needed, as we know all properties are different.</p>
                 <div className='sbsContainer '>
-                    <CTAButton variant="primary" text="Get a quote"/>
+                    <CTAButton variant="primary" text="Get a quote" link="/contact"/>
                 </div>
             </div>
 

@@ -201,3 +201,17 @@ li {
   flex-basis: 520px;
   flex-shrink: 0;
 }
+
+input[type=text], input[type=email] { //test force override
+  width: 100% !important; //of the form container
+  height: 2rem !important;
+  border-color: #333 !important;
+  border-radius: 8px !important;
+  &:hover {
+      border-color: variables.$primary_blue_hover !important;
+    }
+  
+  &:focus {
+  border-color: variables.$primary_blue !important;
+  }
+}

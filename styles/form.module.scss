@@ -4,11 +4,11 @@
     background-color: #ECECEC;
     padding: 1.5rem 1rem;
     border-radius: 10px;
-    max-width: 21.875rem; //350px
+    min-width: 23rem;
 }
 
 .label {
-    margin-bottom: 0.25rem;;
+    margin-bottom: 0.25rem;
 }
 
 .formInput {
@@ -24,6 +24,19 @@
     }
 }
 
-.textInput {
-    height: 2.5rem !important;
+// .textInput {
+//     height: 2.5rem !important;
+// }
+
+.radioContainer {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    width: fit-content;
+}
+
+.radioItem {
+    display: flex;
+    // justify-content: space-between;
+    margin: 0 1rem;
 }

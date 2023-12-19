@@ -7,5 +7,5 @@ interface ButtonProps {
 }
 
 export default function CTAButton({variant, text} : ButtonProps) {
-  return <Button className={` button ${variant}`}>{text} <HiArrowRight style={{verticalAlign: 'bottom'}}/></Button>;
+  return <Button className={`button ${variant}`}>{text} <HiArrowRight style={{verticalAlign: 'bottom'}}/></Button>;
 }

@@ -1,0 +1,29 @@
+@use 'variables';
+
+.form {
+    background-color: #ECECEC;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    max-width: 21.875rem; //350px
+}
+
+.label {
+    margin-bottom: 0.25rem;;
+}
+
+.formInput {
+    width: 100% !important; //of the form container
+    border-color: #333 !important;
+    border-radius: 8px !important;
+    &:hover {
+        border-color: variables.$primary_blue_hover !important;
+      }
+    
+    &:focus {
+    border-color: variables.$primary_blue !important;
+    }
+}
+
+.textInput {
+    height: 2.5rem !important;
+}

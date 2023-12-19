@@ -1,4 +1,5 @@
 import Head from "next/head";
+import QuoteForm from "@/components/form";
 import styles from '@/styles/contact.module.scss';
 
 export default function ContactPage() {
@@ -40,6 +41,11 @@ export default function ContactPage() {
               <p className={styles.text}><strong>Management Office Phone: </strong>(954) 321-0559</p>
               <p className={styles.text}><strong>Office Email: </strong> eagleeyemonitoringllc@gmail.com</p>
             </section>
+          </div>
+
+          <div>
+            <h2>Get a Quote</h2>
+            <QuoteForm/>
           </div>
         </div>
       </div>

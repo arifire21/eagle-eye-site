@@ -203,6 +203,11 @@ li {
   flex-shrink: 0;
 }
 
+.about-section {
+  width:800px;
+  text-align: center;
+}
+
 input[type=text], input[type=email] { //test force override
   width: 100% !important; //of the form container
   height: 2rem !important;
@@ -238,27 +243,43 @@ input[type=text], input[type=email] { //test force override
   position: fixed; /* Stay in place */
   // top: 0; /* Stay at the top */
   // left: 0;
-  background-color: #111; /* Black*/
+  background-color: #333; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 15px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.close-nav-button {
+#close-nav-button {
   float: right;
-  display: none;
+  margin-right: 1rem;
   color: #333;
   background-color: #fff;
-  border: 2px solid #333;
+  border: 2px solid #555;
   border-radius: 10px;
   &:hover, &:active {
-      background-color: lightgray;
+      background-color: gray;
     }
 }
 
 #sidenav-container {
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
+  transition: 0.5s; //for fade out
+  width: 100vw;
+}
+
+.nav-item {
+  margin: 0;
+  font-size: 14pt;
+}
+
+.service-item {
+  margin-left: 2rem;
+}
+
+.sidenav-icon {
+  margin-right: 1rem;
 }
 
 @media (max-width: 428px){
@@ -286,9 +307,14 @@ input[type=text], input[type=email] { //test force override
 
   .sbsContainer {
     flex-direction: column;
+    text-align: center;
   }
 
   .sbsText {
+    width: unset;
+  }
+
+  .about-section {
     width: unset;
   }
 }

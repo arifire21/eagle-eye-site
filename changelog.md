@@ -16,3 +16,10 @@
 ### 0.2.1 (up to Jan 11th)
 - initial mobile media rules and navigation implemented
 - *development environment created*
+
+### 0.2.2
+#### hotfixes:
+- text is now center aligned on all pages (was broken on "about")
+- mobile nav closes on item click, close button is no longer stuck
+- better alignment of nav hierarchy for mobile screens
+- item icons added (may change), plus cleaner close transition

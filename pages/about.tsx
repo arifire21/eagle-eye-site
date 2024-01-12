@@ -11,7 +11,7 @@ export default function About() {
 
         <div className='mainContainer'>
             <h1>About Us</h1>
-            <section style={{width:'800px', textAlign:'center'}}>
+            <section className="about-section">
                 <p>The secret to good parking lot management requires that you break the public’s bad habits.
                     People are very attached to their cars
                         Most pay very little attention to the rights of the property owner and as a result, property owners feel like they are under siege by the vehicle-wielding public.</p>

@@ -36,6 +36,9 @@ import LogoSmall  from '@/public/logo_transparent_crop_white.png';
 function handleOpen() {
   document.getElementById("mobile-sidenav").style.width = "100%";
   document.getElementById('mobile-nav-button').style.backgroundColor = "#335e5f";
+  document.getElementById('sidenav-container').style.opacity = '1';
+  document.getElementsByClassName('mainContainer')[0].style.overflowX = 'hidden'; //test stop scrolling
+
 }
 
 export default function Navbar() {
@@ -49,7 +52,7 @@ export default function Navbar() {
     <>
     <nav className='nav-container'>
       <Link href="/" title='Home'>
-        <Image className='nav-logo' src={LogoSmall} height={55} width={110} alt='eagle-eye-home'/>
+        <Image className='nav-logo' src={LogoSmall} height={55} width={130} alt='eagle-eye-home'/>
       </Link>
       <div id='desktop-wrapper'>
         <Dropdown>

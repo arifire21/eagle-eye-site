@@ -5,9 +5,9 @@
 }
 
 .logo {
-  height: 1em;
+  margin-top: 1.5rem;
 }
-
+  
 .sub {
   font-family: 'Inika';
   font-size: 30pt;
@@ -16,7 +16,7 @@
 
 .tagline {
   margin-top: 0.75rem;
-  font-size: 26px;
+  font-size: 24px;
   color: variables.$primary_blue;
 }
 
@@ -24,5 +24,28 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 428px) {
+  .closer {
+    text-align: center;
+  }
+
+  .logo {
+    margin-top: 0;
+    scale: 0.5;
+  }
+  
+  .sub {
+    margin: 0;
+    font-size: 22pt;
+    margin-top: -2.5rem;
+  }
+  
+  .tagline {
+    margin-top: 0.5rem;
+    font-size: 18px;
+    text-align: center;
   }
 }

@@ -44,6 +44,7 @@ h2 {
 
 //NAVBAR STYLING
 .nav-container {
+  z-index: 2;
   height: 78px;
   width: 100vw;
   background-color: variables.$primary_blue;
@@ -213,5 +214,81 @@ input[type=text], input[type=email] { //test force override
   
   &:focus {
   border-color: variables.$primary_blue !important;
+  }
+}
+
+#mobile-nav-button {
+  float: right;
+  display: none;
+  color: white;
+  background-color: variables.$primary_blue;
+  border: 2px solid variables.$secondary_blue;
+  border-radius: 10px;
+  &:hover, &:active {
+    border-color: variables.$primary_blue_click;
+    background-color: variables.$primary_blue_click;
+    color: lightgray;
+  }
+}
+
+#mobile-sidenav {
+  z-index: 3;
+  height: calc(100vh - 78px);
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  // top: 0; /* Stay at the top */
+  // left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 15px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.close-nav-button {
+  float: right;
+  display: none;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  &:hover, &:active {
+      background-color: lightgray;
+    }
+}
+
+#sidenav-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 428px){
+  .nav-container {
+    justify-content: space-between;
+  }
+
+  #mobile-nav-button {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  #desktop-wrapper {
+    display: none;
+  }
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .mainContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sbsContainer {
+    flex-direction: column;
+  }
+
+  .sbsText {
+    width: unset;
   }
 }

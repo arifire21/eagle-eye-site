@@ -27,7 +27,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/footer.jsx"  ],
+, "components/footer.jsx", "components/mobile-drawer.jsx", "components/navbar.jsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       <div className='mainContainer'>
-        <Image src={Logo} alt='Eagle Eye LLC.' style={{ marginTop: '1.5rem' }} />
+        <Image src={Logo} alt='Eagle Eye LLC.' className={styles.logo} />
         <h1 className={styles.sub}>Parking Enforcement and Monitoring Services</h1>
         <p className={styles.tagline}>If you want happy tenants and customers tomorrow, you’ll hire us today!</p>
 
@@ -67,7 +67,7 @@ export default function Home() {
               and more!
             </ul>
 
-            <div className='sbsContainer '>
+            <div className='sbsContainer'>
               <CTAButton variant='primary' text='Monitoring services' link='/services/parking' />
               <CTAButton variant='secondary' text='Painting services' link='/services/painting' />
             </div>
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
         </div>
 
-        <p>We look forward to working with you and being the solution for your parking problems!</p>
+        <p className={styles.closer}>We look forward to working with you and being the solution for your parking problems!</p>
       </div>
     </>
   );

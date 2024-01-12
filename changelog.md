@@ -13,5 +13,6 @@
 - hotfix: adding links to buttons
 - *initial Vercel deployment*
 
-### 0.2.1 (Jan 10-11th)
-- mobile styling and navigation implemented
+### 0.2.1 (up to Jan 11th)
+- initial mobile media rules and navigation implemented
+- *development environment created*

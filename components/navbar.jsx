@@ -37,7 +37,7 @@ function handleOpen() {
   document.getElementById("mobile-sidenav").style.width = "100%";
   document.getElementById('mobile-nav-button').style.backgroundColor = "#335e5f";
   document.getElementById('sidenav-container').style.opacity = '1';
-  document.getElementsByClassName('mainContainer')[0].style.overflowX = 'hidden'; //test stop scrolling
+  // document.getElementsByClassName('mainContainer')[0].style.overflowX = 'hidden'; //test stop scrolling
 
 }
 

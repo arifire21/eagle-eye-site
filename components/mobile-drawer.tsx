@@ -16,7 +16,7 @@ function handleClose() {
     document.getElementById("mobile-sidenav").style.width = "0";
     document.getElementById('mobile-nav-button').style.backgroundColor = "#477E80";
     document.getElementById('sidenav-container').style.opacity = '0';
-    document.getElementsByClassName('mainContainer')[0].style.overflowX = 'unset';
+    // document.getElementsByClassName('mainContainer')[0].style.overflowX = 'unset';
 } 
 
 export default function MobileSidebar() {

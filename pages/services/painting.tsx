@@ -1,9 +1,10 @@
 import Head from "next/head"
 import Image from "next/image"
-// import styles from '@/styles/parking.module.scss'
+import styles from '../../styles/painting.module.scss'
 
 import Site2 from '../../images/site2.png';
 import CTAButton from "@/components/button";
+import Carousel from "@/components/carousel";
 
 export default function Painting() {
     return (
@@ -43,7 +44,9 @@ export default function Painting() {
             </div>
 
             <h2>Examples of Our Work:</h2>
-            <p>TBD!</p>
+            <div className={styles.pageCarouselContainer}>
+            <Carousel/>
+            </div>
         </div>
         </>
     )

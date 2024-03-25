@@ -23,3 +23,8 @@
 - mobile nav closes on item click, close button is no longer stuck
 - better alignment of nav hierarchy for mobile screens
 - item icons added (may change), plus cleaner close transition
+
+### 0.3.2
+- color on required input asterisks, clarification on textarea
+- added more images
+- carousel added

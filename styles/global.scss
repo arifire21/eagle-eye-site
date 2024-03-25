@@ -64,17 +64,24 @@ h2 {
 }
 
 .nav-item {
-  transition: all .5s ease-in;
-  padding: 10px 10px;
+  width: fit-content;
+  transition: all .2s ease-in;
+  padding: 5px 10px;
   color: #fff;
   margin: 0 1rem;
-  border: none;
+  // border: none;
   height: fit-content;
   align-content: center;
+  border-bottom: 2px solid transparent;
   text-decoration: none;
   &:hover, &:active, &.active {
-    text-decoration: underline solid #fff 2px;
+    // text-decoration: underline solid #fff 2px;
+    border-color: #fff;
   }
+}
+
+.mobile-nav {
+  margin-bottom: 5px !important;
 }
 
 .dropdown-main {
@@ -85,6 +92,8 @@ h2 {
   color: #fff;
   margin: 0 1rem;
   height: fit-content;
+  font-size: 14pt;
+  font-family: inherit;
 }
 
 .dropdown-menu {
@@ -285,6 +294,12 @@ input[type=text], input[type=email] { //test force override
 @media (max-width: 428px){
   .nav-container {
     justify-content: space-between;
+  }
+
+  .nav-item{
+    &:hover, &:active, &.active {
+      color: variables.$primary_blue;
+    }
   }
 
   #mobile-nav-button {

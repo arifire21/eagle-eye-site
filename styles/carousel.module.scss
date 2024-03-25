@@ -1,0 +1,77 @@
+@use 'variables';
+
+.imageContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  } */
+
+.carouselImage {
+    /* background-color: rgb(170, 170, 170); */
+    background-color: gray;
+    border-radius: 10px;
+    transition: all 0.5s fade;
+    pointer-events: none;
+    /* animation: fadeIn 5s;  */
+}
+
+.dotContainer {
+    height: fit-content;
+    margin: 0 1rem;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 3px;
+    display: inline-block;
+    background-color: gray;
+    border-radius: 50%;
+    /* cursor: pointer; */
+    transition: background-color 0.3s ease-in;
+}
+
+.currentDot {
+    background-color: variables.$primary_blue !important;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+.arrowButton {
+    background-color: transparent;
+    color: invert;
+    border: 2px solid variables.$primary_blue !important;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    &:hover {
+        background-color: variables.$primary_blue_hover !important;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+        border-color: variables.$primary_blue_hover !important;
+    }
+}
+
+
+/* .dot:hover {
+    filter: brightness(80%);
+} */
+
+.arrowButton:active, .dot:active {
+    filter: brightness(70%)
+}

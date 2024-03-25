@@ -4,6 +4,7 @@ import { MenuButton } from '@mui/base/MenuButton';
 import { Menu } from '@mui/base/Menu';
 import { MenuItem } from '@mui/base/MenuItem';
 import { HiOutlineMenu } from 'react-icons/hi'
+import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
@@ -17,11 +18,11 @@ import LogoSmall  from '@/public/logo_transparent_crop_white.png';
 // let observer = new MutationObserver(mutations =>
 //   {
 //     mutations.forEach(MutationRecord => {
-//       const target = MutationRecord.target as HTMLElement
+//       const target = MutationRecord.target //as HTMLElement
 //       if(target.className === 'Mui-expanded'){
-//         setArrow('&#9650')
+//         setArrow(true)
 //       } else {
-//         setArrow('&#9660;')
+//         setArrow(false)
 //       }
 //     })
 //   }
@@ -43,21 +44,33 @@ function handleOpen() {
 
 export default function Navbar() {
   // const [arrow, setArrow] = useState<HTMLElement>(&#9660;) //down-facing carat
+  const [isMenuDown, setMenuDown] = useState(false)
   const pathname = usePathname()
+
+  let navbar;
+
+  useEffect(() => {
+    navbar = document.getElementById("navbar")
+    console.log('out')
+  }, []);
 
   //handlers instead?
   // function 
 
   return (
     <>
-    <nav className='nav-container'>
+    <nav className='nav-container' id='navbar'>
       <Link href="/" title='Home'>
         <Image className='nav-logo' src={LogoSmall} height={55} width={130} alt='eagle-eye-home'/>
       </Link>
       <div id='desktop-wrapper'>
-        <Dropdown>
-          <MenuButton className='dropdown-main primary'>Services &#9660;</MenuButton>
-          <Menu className='dropdown-menu'>
+        <Dropdown
+          onOpenChange={() => (isMenuDown ? setMenuDown(false) : setMenuDown(true))} //if already down, set false to put back up
+        >
+          <MenuButton className='dropdown-main primary'>
+            Services {isMenuDown ? <FaCaretUp/> : <FaCaretDown/>}
+          </MenuButton>
+          <Menu className='dropdown-menu' anchor={navbar} style={{position:'absolute', top:'80px !important'}}>
             <MenuItem className='dropdown-item'>
               <Link className={`${pathname === '/services/parking' ? 'active' : ''}`}
                     href="/services/parking" title='Parking & Monitoring'>Parking & Monitoring</Link>

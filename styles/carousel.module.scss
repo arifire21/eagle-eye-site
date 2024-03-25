@@ -58,12 +58,12 @@
     transition-property: background-color;
     transition-duration: 0.2s;
     &:hover {
-        background-color: variables.$primary_blue_hover !important;
+        background-color: variables.$secondary_blue !important;
     }
     &:disabled {
         cursor: not-allowed;
         pointer-events: none;
-        border-color: variables.$primary_blue_hover !important;
+        border-color: variables.$secondary_blue !important;
     }
 }
 

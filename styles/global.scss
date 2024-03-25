@@ -74,6 +74,7 @@ h2 {
   align-content: center;
   border-bottom: 2px solid transparent;
   text-decoration: none;
+  font-size: 14pt;
   &:hover, &:active, &.active {
     // text-decoration: underline solid #fff 2px;
     border-color: #fff;
@@ -276,11 +277,6 @@ input[type=text], input[type=email] { //test force override
   margin-left: 1rem;
   transition: 0.5s; //for fade out
   width: 100vw;
-}
-
-.nav-item {
-  margin: 0;
-  font-size: 14pt;
 }
 
 .service-item {
